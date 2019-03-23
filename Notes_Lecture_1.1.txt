@@ -3,7 +3,7 @@ Use of async and finish constructs
 operation_1
 finish {
 	async operation_2;
-	async operation_3;
+	operation_3;
 }
 operation_4;
 
