@@ -1,0 +1,14 @@
+Use of async and finish constructs
+
+operation_1
+finish {
+	async operation_2;
+	async operation_3;
+}
+operation_4;
+
+With the above syntax, you are expressing that operation_1 occurs first. 
+
+Operations operation_2 and operation_3 execute in parallel [parrael means assigned to independent cores]. 
+
+Operation_4 however waits for the tasks in in the finish scope to be completed.
